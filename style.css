@@ -6,6 +6,19 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(15, 24, 40);
+    overflow: hidden;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
 }
 
 .container {
@@ -128,6 +141,30 @@ main {
     font-size: 20px;
     font-weight: 600;
 }
+
+@media screen and (max-width: 900px) {
+    .menu {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+        float: right;
+        margin-right: 200px;
+    }
+    .content {
+        margin-top: 60px;
+        margin-right:auto;
+        margin-left: auto;
+    }
+    .hero img {
+        width: 500px;
+        height: 500px;
+        float: none;
+        margin: auto;
+    }
+}
+
+
 
 
 
